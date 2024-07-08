@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectronicSafari</title>
+  <link rel="stylesheet" href="recursos/estilo/style.css">
+</head>
+<body>
+  <header>
+    <img src="recursos/img/logo.jpg" alt="logo">
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="safaribox.html">Safaribox</a></li>
+        <li><a href="nossasredes.html">Nossas Redes</a></li>
+        <li><a href="nossaloja.html">Nossa Loja</a></li>
+        <li><a href="parcerias.html">Parcerias</a></li>
+        <li><a href="sobrenos.html">Sobre Nós</a></li>
+        <li><a href="sugestoes.html">Sugestões</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="#" onclick="loginModal()">Login</a></li>
+      </ul>
+    </nav>
+    <form id="search-form">
+      <input type="text" id="search" name="search" placeholder="Pesquisar...">
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main>
+    <section id="produtos">
+      <div class="produto">
+        <img src="recursos/img/produto1.jpeg" alt="Produto 1">
+        <h3>Produto 1</h3>
+        <p>Descrição do Produto 1</p>
+      </div>
+      <div class="produto">
+        <img src="recursos/img/produto2.jpeg" alt="Produto 2">
+        <h3>Produto 2</h3>
+        <p>Descrição do Produto 2</p>
+      </div>
+      <div class="produto">
+        <img src="recursos/img/produto3.jpeg" alt="Produto 3">
+        <h3>Produto 3</h3>
+        <p>Descrição do Produto 3</p>
+      </div>
+      <div class="produto">
+        <img src="recursos/img/produto4.jpeg" alt="Produto 4">
+        <h3>Produto 4</h3>
+        <p>Descrição do Produto 4</p>
+      </div>
+      <div class="produto">
+        <img src="recursos/img/produto5.jpeg" alt="Produto 5">
+        <h3>Produto 3</h3>
+        <p>Descrição do Produto 5</p>
+      </div>
+      <div class="produto">
+        <img src="recursos/img/produto6.jpeg" alt="Produto 6">
+        <h3>Produto 6</h3>
+        <p>Descrição do Produto 6</p>
+      </div>
+      <div class="produto">
+        <img src="recursos/img/produto7.jpeg" alt="Produto 7">
+        <h3>Produto 7</h3>
+        <p>Descrição do Produto 7</p>
+      </div>
+      <div class="produto">
+        <img src="recursos/img/produto8.jpeg" alt="Produto 8">
+        <h3>Produto 8</h3>
+        <p>Descrição do Produto 8</p>
+      </div>
+
+    </section>
+    
+  </main>
+
+<!-------------------------modal---------------------------------->
+
+  <div id="fade" class="hide">
+    <div id="login" class="hide">
+      <h2>Login</h2>
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Entrar</button>
+    </div>
+  </div>
+
+<!-------------------------fim modal---------------------------------->
+
+  
+  <footer>
+    <p>&copy; 2024 ElectronicSafari. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

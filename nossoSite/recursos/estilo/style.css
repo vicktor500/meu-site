@@ -1,0 +1,229 @@
+
+/* Estilos básicos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans' sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #535353;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: #dadada;
+    color: #000000;
+    text-align: center;
+    box-shadow: 0 0 2em;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  /* Barra de pesquisa */
+  #search-form {
+    margin-top: 10px;
+  }
+  
+  #search-form input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    width: 30%;
+  }
+  
+  #search-form button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background: #7eda28;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Seções */
+  section {
+    padding: 2rem;
+    background: #959595;
+    box-shadow: black 0 9px 1em;
+    width: 50%;
+  }
+  
+  
+  /* Produtos */
+  #produtos {
+    display: flex;
+    position: relative;
+    left: 25%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .produto {
+    background: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    width: calc(44% - 40px); 
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 0 1em;
+  }
+  
+  .produto img {
+    max-width: 200px;
+    height: 200px;
+  }
+  
+  .produto h3 {
+    margin: 10px 0;
+  }
+  
+  .produto p {
+    font-size: 14px;
+    color: #555;
+  }
+  /* modal */
+
+  #fade{
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.4) ;
+    z-index: 5;  
+  }
+  #login{
+      position: relative;
+      top:30%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      border:1px solid #4fa81b;
+      border-radius: 20px;
+      width: 330px;
+      height: 150px;
+      z-index: 7;
+      background-color: #fff;
+      box-shadow: 3px 3px black;
+      padding: 10px;
+      
+  }
+  
+  #fade, #login{
+      opacity: 1;
+      pointer-events: all;
+      transition: 0.5s;
+  }
+  
+  #fade.hide, 
+  #login.hide{
+      opacity: 0;
+      pointer-events: none;
+      z-index: -5;
+  
+  }
+
+  /* Formulários */
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  /*safaribox*/
+  #safaribox{
+    color: #ddd;
+    background-color: rgb(43, 175, 43);
+    position: relative;
+    left: 50%;
+  }
+
+  #safaribox .botaoAssine{
+    background-color: darkgreen;
+    width: 100px;
+    border-radius: 20px;
+  }
+
+  #safaribox .botaoAssine a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /*nossas redes*/
+  #nossas-redes{
+    position: relative;
+    left: 25%;
+  }
+
+  #nossas-redes p {
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    padding-left: 43px;
+  }
+
+  #nossas-redes a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  #nossas-redes img {
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  #inst {
+    left: 21px;
+    top: 70px;
+  }
+
+  #whats {
+    left: 21px;
+    top: 70px;
+  }
+
+  #x {
+    left: 21px;
+    top: 70px;
+  }
+
+  /* Rodapé */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+  }
